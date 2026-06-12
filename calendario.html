@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Paganoto - Central de Atendimento</title>
+    <!-- Link para ícones modernos externos (FontAwesome) -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Topo da Página -->
+    <header class="topo">
+        <div class="logo-area">
+            <img src="img/logo.png" alt="Logo Oficial do Colégio Paganoto">
+            <span class="nome-escola">Colégio Paganoto</span>
+        </div>
+        <nav class="menu-navegacao">
+            <a href="index.html">Início</a>
+            <a href="contato.html" class="ativo">Contato</a>
+            <a href="professores.html">Professores</a>
+            <a href="calendario.html">Calendário</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Banner de Introdução Hero -->
+        <section class="hero-section pequenos-ajustes-contato">
+            <div class="hero-conteudo">
+                <span class="tag-topo">Suporte à Comunidade</span>
+                <h1>Fale Conosco</h1>
+                <div class="linha-decorativa"></div>
+                <p>
+                    Estamos prontos para atender pais, alunos, responsáveis e toda a comunidade escolar de Foz do Iguaçu. Tire suas dúvidas com nossa secretaria geral.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção Principal de Contato (Duas Colunas) -->
+        <section class="secao-contato-principal">
+            <div class="contato-grid-container">
+                
+                <!-- Coluna 1: Canais Oficiais -->
+                <div class="canais-atendimento-card">
+                    <h2>Canais Oficiais</h2>
+                    <p class="subtitulo-canais">Entre em contato diretamente ou venha nos visitar.</p>
+                    
+                    <div class="info-linha">
+                        <div class="info-icone"><i class="fas fa-phone-alt"></i></div>
+                        <div class="info-texto">
+                            <span>Telefone da Secretaria</span>
+                            <strong>(45) 3524-4371</strong>
+                        </div>
+                    </div>
+
+                    <div class="info-linha">
+                        <div class="info-icone"><i class="fas fa-envelope"></i></div>
+                        <div class="info-texto">
+                            <span>E-mail Institucional</span>
+                            <strong>fozmarianopaganoto@seed.pr.gov.br</strong>
+                        </div>
+                    </div>
+
+                    <div class="info-linha">
+                        <div class="info-icone"><i class="fas fa-map-marked-alt"></i></div>
+                        <div class="info-texto">
+                            <span>Endereço</span>
+                            <strong>Rua Gaspar, 447 - Jardim Petrópolis</strong>
+                            <p>CEP: 85.868-250 | Foz do Iguaçu - PR</p>
+                        </div>
+                    </div>
+
+                    <div class="info-linha horario-bloco">
+                        <div class="info-icone"><i class="far fa-clock"></i></div>
+                        <div class="info-texto">
+                            <span>Horário de Funcionamento</span>
+                            <strong>Segunda a Quinta:</strong> 07:30 às 23:50<br>
+                            <strong>Sexta-feira:</strong> 07:30 às 23:00
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Formulário Interativo -->
+                <div class="formulario-container-card"> 
+                    <h2>Envie uma Mensagem</h2>
+                    <p class="subtitulo-form">Preencha os campos abaixo e responderemos o mais rápido possível.</p>
+                    
+                    <form action="#" method="POST" class="form-contato">
+                        <div class="grupo-campo">
+                            <label for="nome"><i class="far fa-user"></i> Nome Completo:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                        </div>
+
+                        <div class="grupo-campo-duplo">
+                            <div class="grupo-campo">
+                                <label for="email"><i class="far fa-envelope"></i> Seu E-mail:</label>
+                                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                            </div>
+                            <div class="grupo-campo">
+                                <label for="telefone"><i class="fab fa-whatsapp"></i> Telefone / WhatsApp:</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(45) 99999-9999" required>
+                            </div>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="assunto"><i class="far fa-bookmark"></i> Assunto principal:</label>
+                            <select id="assunto" name="assunto" required>
+                                <option value="" disabled selected>Selecione uma opção...</option>
+                                <option value="matricula">Matrículas e Transferências</option>
+                                <option value="documentos">Secretaria / Documentações</option>
+                                <option value="cursos">Cursos Técnicos</option>
+                                <option value="outro">Outros Assuntos</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-campo">
+                            <label for="mensagem"><i class="far fa-comments"></i> Mensagem ou Dúvida:</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem detalhadamente aqui..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-enviar-formulario">
+                            <span>Enviar Mensagem</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção do Mapa Interativo -->
+        <section class="localizacao-mapa">
+            <div class="mapa-titulo">
+                <h2>Nossa Localização</h2>
+                <p>Encontre o caminho mais rápido para chegar até nós</p>
+            </div>
+            <div class="mapa-container">
+                <!-- Iframe placeholder simulando o mapa (pode ser substituído pelo link real do Google Maps) -->
+                <iframe 
+                    src="https://google.com" 
+                    width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="mapa-botoes-externos">
+                <a class="btn-mapa-waze" target="_blank" href="https://waze.com"><i class="fab fa-waze"></i> Abrir rotas no Waze</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé Modernizado -->
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div class="rodape-info">
+                <h4>Colégio Estadual Professor Mariano Camilo Paganoto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Jardim Petrópolis - Foz do Iguaçu, PR</p>
+            </div>
+            <div class="rodape-redes">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="rodape-direitos">
+            <p>&copy; 2026 Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
